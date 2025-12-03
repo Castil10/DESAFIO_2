@@ -7,7 +7,7 @@ public class FrmPrincipal : Form
 {
     public FrmPrincipal()
     {
-        Text = "ShopSmart - Principal";
+        Text = "Heladería ShopSmart - Principal";
         WindowState = FormWindowState.Maximized;
         InitializeMenu();
     }
@@ -15,14 +15,14 @@ public class FrmPrincipal : Form
     private void InitializeMenu()
     {
         var menu = new MenuStrip();
-        var productosItem = new ToolStripMenuItem("Productos", null, (_, _) => new FrmProductos().ShowDialog());
-        var clientesItem = new ToolStripMenuItem("Clientes", null, (_, _) => new FrmClientes().ShowDialog());
-        var proveedoresItem = new ToolStripMenuItem("Proveedores", null, (_, _) => new FrmProveedores().ShowDialog());
-        var ventasItem = new ToolStripMenuItem("Ventas", null, (_, _) => new FrmVentas().ShowDialog());
+        var productosItem = new ToolStripMenuItem("Sabores y productos", null, (_, _) => new FrmProductos().ShowDialog());
+        var clientesItem = new ToolStripMenuItem("Clientes de la heladería", null, (_, _) => new FrmClientes().ShowDialog());
+        var proveedoresItem = new ToolStripMenuItem("Proveedores de insumos", null, (_, _) => new FrmProveedores().ShowDialog());
+        var ventasItem = new ToolStripMenuItem("Ventas en mostrador", null, (_, _) => new FrmVentas().ShowDialog());
         var reportesItem = new ToolStripMenuItem("Reportes");
-        reportesItem.DropDownItems.Add("Ventas diarias (TODO)");
-        reportesItem.DropDownItems.Add("Productos con stock bajo (TODO)");
-        reportesItem.DropDownItems.Add("Productos más vendidos (TODO)");
+        reportesItem.DropDownItems.Add("Ventas diarias de helados (TODO)");
+        reportesItem.DropDownItems.Add("Sabores con stock bajo (TODO)");
+        reportesItem.DropDownItems.Add("Helados más vendidos (TODO)");
 
         menu.Items.Add(productosItem);
         menu.Items.Add(clientesItem);

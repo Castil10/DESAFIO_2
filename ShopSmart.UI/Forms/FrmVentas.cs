@@ -24,7 +24,7 @@ public class FrmVentas : Form
 
     public FrmVentas()
     {
-        Text = "Ventas";
+        Text = "Ventas de helados";
         Width = 800;
         Height = 600;
         CargarEjemplos();
@@ -51,9 +51,9 @@ public class FrmVentas : Form
 
     private void CargarEjemplos()
     {
-        _inventario.AgregarProducto(new Producto { Codigo = "P001", Nombre = "Teclado", Precio = 25, StockActual = 10, StockMinimo = 2, Activo = true });
-        _inventario.AgregarProducto(new Producto { Codigo = "P002", Nombre = "Mouse", Precio = 15, StockActual = 20, StockMinimo = 5, Activo = true });
-        _inventario.AgregarProducto(new Producto { Codigo = "P003", Nombre = "Monitor", Precio = 120, StockActual = 5, StockMinimo = 1, Activo = true });
+        _inventario.AgregarProducto(new Producto { Codigo = "H001", Nombre = "Helado de vainilla", Precio = 2.50m, StockActual = 30, StockMinimo = 8, Activo = true });
+        _inventario.AgregarProducto(new Producto { Codigo = "H002", Nombre = "Helado de chocolate", Precio = 2.75m, StockActual = 25, StockMinimo = 8, Activo = true });
+        _inventario.AgregarProducto(new Producto { Codigo = "H003", Nombre = "Paleta de frutilla", Precio = 1.80m, StockActual = 40, StockMinimo = 12, Activo = true });
     }
 
     private void BuscarProducto()

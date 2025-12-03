@@ -21,7 +21,7 @@ public class FrmLogin : Form
 
     public FrmLogin()
     {
-        Text = "ShopSmart - Login";
+        Text = "Heladería ShopSmart - Login";
         StartPosition = FormStartPosition.CenterScreen;
         FormBorderStyle = FormBorderStyle.FixedDialog;
         MaximizeBox = false;

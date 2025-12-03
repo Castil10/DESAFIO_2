@@ -25,7 +25,7 @@ public class FrmProductos : Form
 
     public FrmProductos()
     {
-        Text = "Gestión de productos";
+        Text = "Catálogo de helados y toppings";
         Width = 800;
         Height = 600;
         InitializeLayout();
@@ -63,22 +63,22 @@ public class FrmProductos : Form
     {
         _inventario.AgregarProducto(new Producto
         {
-            Codigo = "P001",
-            Nombre = "Teclado",
-            Descripcion = "Teclado de oficina",
-            Precio = 25,
-            StockActual = 10,
-            StockMinimo = 2,
+            Codigo = "H001",
+            Nombre = "Helado de vainilla",
+            Descripcion = "Base clásica de vainilla artesanal",
+            Precio = 2.50m,
+            StockActual = 30,
+            StockMinimo = 8,
             Activo = true
         });
         _inventario.AgregarProducto(new Producto
         {
-            Codigo = "P002",
-            Nombre = "Mouse",
-            Descripcion = "Mouse óptico",
-            Precio = 15,
-            StockActual = 20,
-            StockMinimo = 5,
+            Codigo = "H002",
+            Nombre = "Helado de chocolate",
+            Descripcion = "Chocolate intenso con cacao 70%",
+            Precio = 2.75m,
+            StockActual = 25,
+            StockMinimo = 8,
             Activo = true
         });
     }

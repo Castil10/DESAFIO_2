@@ -1,7 +1,7 @@
 namespace ShopSmart.Core.Models;
 
 /// <summary>
-/// Proveedor que abastece productos a la tienda.
+/// Proveedor que abastece insumos para la heladería (bases, frutas, toppings).
 /// </summary>
 public class Proveedor
 {

@@ -1,7 +1,7 @@
 namespace ShopSmart.Core.Models;
 
 /// <summary>
-/// Producto administrado en el inventario de la tienda.
+/// Producto de heladería administrado en el inventario (sabores, toppings, presentaciones).
 /// </summary>
 public class Producto : IComparable<Producto>
 {

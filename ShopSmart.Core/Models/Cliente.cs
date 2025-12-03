@@ -1,7 +1,7 @@
 namespace ShopSmart.Core.Models;
 
 /// <summary>
-/// Representa un cliente de la tienda.
+/// Representa a un cliente frecuente o eventual de la heladería.
 /// </summary>
 public class Cliente
 {
